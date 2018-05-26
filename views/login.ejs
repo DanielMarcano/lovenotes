@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lovenotes - Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<section class="login">
+  <h1>Log In</h1>
+  <!-- show any messages that come back with authentication -->
+    <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+    <% } %>
+
+  <form action="/login" class="login-form" method="post">
+    <input type="email" name="email" id="email" placeholder="johndoe@email.com" autofocus>
+    <input type="password" name="password" id="password">
+    <input type="submit" name="" value="Log In">
+  </form>
+  <a href="/">Home</a>
+</section>
+</body>
+</html>

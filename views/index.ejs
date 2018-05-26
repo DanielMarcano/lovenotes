@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lovenotes</title>
+  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+  <link rel="stylesheet" href="../css/app.css" type="text/css">
+</head>
+<body>
+  <header>
+    <h1>Lovenotes</h1>
+  </header>
+  <section class="invitation">
+    <p class="invitation-message">Come</p>
+    <p class="invitation-message">send</p>
+    <p class="invitation-message">yours</p>
+  </section>
+  <% if (message.length > 0) { %>
+      <div class="alert alert-danger"><%= message %></div>
+  <% } %>
+  <section class="welcome">
+    <h3>Log In or Register</h3>
+    <div class="nav-links">
+      <a href="/login" class="nav-link">Login</a>
+      <a href="/signup" class="nav-link">Sign Up</a>
+    </div>
+  </section>
+</body>
+</html>

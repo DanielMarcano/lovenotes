@@ -1,0 +1,12 @@
+{
+  "test": {
+    "MONGO_DB_URI": "mongodb://localhost:27017/lovenotesTest",
+    "JWT_SECRET": "LOVE_NOTES",
+    "PORT": 8080
+  },
+  "development": {
+    "MONGO_DB_URI": "mongodb://localhost:27017/lovenotes",
+    "JWT_SECRET": "LOVE_NOTES",
+    "PORT": 8080
+  }
+}

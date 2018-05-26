@@ -1,4 +1,4 @@
-const { setEnvVariables } = require('../utilities/utilities');
+const { setEnvVariables } = require('../app/utilities/utilities');
 const config = require('./config.json');
 
 const env = process.env.NODE_ENV || 'development';
